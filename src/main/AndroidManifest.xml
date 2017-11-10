@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cpsc471.cpsc471project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WorkoutsPage"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Add_Workout"
+            android:parentActivityName=".WorkoutsPage" />
+        <activity
+            android:name=".MuscleGroup"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowExerciseActivity"
+            android:parentActivityName=".MuscleGroup" />
+        <activity
+            android:name=".AddExerciseActivity"
+            android:parentActivityName=".MuscleGroup" />
+        <activity
+            android:name=".UserMenuActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DisplayExercise"
+            android:parentActivityName=".UserMenuActivity" />
+        <activity
+            android:name=".DisplayHealth"
+            android:parentActivityName=".UserMenuActivity" />
+        <activity
+            android:name=".DisplayProfile"
+            android:parentActivityName=".UserMenuActivity" />
+        <activity
+            android:name=".DisplaySchedule"
+            android:parentActivityName=".UserMenuActivity" />
+        <activity android:name=".AddExerciseToWorkout" />
+        <activity
+            android:name=".ShowExercisesInWorkout"
+            android:parentActivityName=".WorkoutsPage" />
+        <activity
+            android:name=".SignUp"
+            android:parentActivityName=".loggingIn" />
+        <activity
+            android:name=".loggingIn"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminPage"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DeleteActivity"
+            android:parentActivityName=".AdminPage" />
+        <activity
+            android:name=".AddHistory"
+            android:parentActivityName=".DisplayHealth" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:parentActivityName=".DisplayProfile" />
+        <activity
+            android:name=".AddWorkoutToSchedule"
+            android:parentActivityName=".DisplaySchedule" />
+        <activity
+            android:name=".AddExerciseHistory"
+            android:parentActivityName=".ShowExercisesInWorkout" />
+        <activity
+            android:name=".UserDeleteWorkout"
+            android:parentActivityName=".DisplayProfile" />
+        <activity
+            android:name=".WeightGoal"
+            android:parentActivityName=".UserMenuActivity" />
+        <activity
+            android:name=".ShowBMI"
+            android:parentActivityName=".UserMenuActivity" />
+        <activity android:name=".SetWeightGoal"
+            android:parentActivityName=".WeightGoal"/>
+    </application>
+
+</manifest>
